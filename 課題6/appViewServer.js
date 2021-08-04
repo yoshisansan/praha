@@ -1,10 +1,10 @@
 module.exports = (port) => {
   const ngrok = require('ngrok'),
-    express = require('express'),
-    path = require('path'),
-    cors = require('cors'),
-    fetch = require('node-fetch'),
-    app = express();
+  express = require('express'),
+  path = require('path'),
+  cors = require('cors'),
+  fetch = require('node-fetch'),
+  app = express();
 
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));

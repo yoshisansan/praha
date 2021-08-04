@@ -88,7 +88,9 @@ module.exports = (port) => {
   ngrok.connect(port).then((url) => {
     app.listen(port, () => {
       // console.log(`appViewServer app listening at http://localhost:${port}`);
+      console.log(``);
       console.log(`appPostReqServer: ${url}`);
+      console.log(`↑src/script/notSimpleReq.js もしくは src/script/simpleReq.js の publickURL へコピペしてください`);
     });
   });
 };
