@@ -25,7 +25,7 @@ appView.listen(appViewPort, () => {
 appServer.get('/', (req, res) => {
   const allowOriginArr = ['http://test.com', 'http://060048e1d7b4.ngrok.io', 'http://localhost:4000'];
   const reqOriginName = req.headers.origin;
-  isAllowOrigin = allowOriginArr.includes(reqOriginName);
+  const isAllowOrigin = allowOriginArr.includes(reqOriginName);
   if (isAllowOrigin === false) res.end();
 
   res.setHeader('Access-Control-Allow-Origin', reqOriginName);
