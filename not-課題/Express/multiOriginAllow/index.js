@@ -1,9 +1,4 @@
-const ngrok = require('ngrok'),
-  express = require('express'),
-  path = require('path'),
-  cors = require('cors'),
-  fetch = require('node-fetch'),
-  appViewPort = 4000,
+const  appViewPort = 4000,
   appServerPort = 4040,
   appView = express(),
   appServer = express();
