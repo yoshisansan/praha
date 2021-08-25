@@ -2,11 +2,9 @@
 // 関数の中でインスタンスの中身をエラーで中断させずにテストすること
 // throw new Errorを意図的に生じさせてるのにテストを回すとFAIlが表示されること
 
-
 import { sumOfArray, asyncSumOfArray, asyncSumOfArraySometimesZero, getFirstNameThrowIfLong} from '../functions';
 import { NameApiServiceDependName, NameApiService } from '../nameApiService';
 import { DatabaseMock } from '../util';
-
 
 describe('functionsの４つの関数テスト', () => {
   it('sumOfArrayのテスト', () => {
