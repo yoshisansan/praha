@@ -19,6 +19,7 @@
     "superagent": "^6.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "eslint": "^7.30.0",
     "eslint-plugin-node": "^11.1.0",
     "husky": "^7.0.0",
