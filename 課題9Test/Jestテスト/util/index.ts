@@ -10,13 +10,4 @@ export class DatabaseMock {
       throw new Error("fail!");
     }
   }
-
-  public saveDependNum(_: number[]): void {
-    // Error防止用
-    if (getRandomInt(10) < 2) {
-      return
-    }
-
-    return
-  }
 }
