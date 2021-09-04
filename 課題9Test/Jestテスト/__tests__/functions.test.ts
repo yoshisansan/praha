@@ -6,6 +6,7 @@ const NameApiServiceMock = NameApiService as jest.Mock;
 describe('functionsの４つの関数テスト', () => {
   it('sumOfArrayのテスト', () => {
     expect(sumOfArray([1,1])).toBe(2);
+    expect(sumOfArray([])).toBe(null);
   });
 
   it('asyncSumOfArrayのテスト', async () => {
