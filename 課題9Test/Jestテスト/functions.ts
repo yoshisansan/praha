@@ -1,4 +1,4 @@
-import { NameApiServiceDependName, NameApiService } from "./nameApiService";
+// import { NameApiService } from "./nameApiService";
 import { DatabaseMock } from "./util";
 
 export const sumOfArray = (numbers: number[]): number => {

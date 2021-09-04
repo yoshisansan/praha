@@ -1,5 +1,4 @@
 import axios from "axios";
-import { resolve } from "path";
 
 export class NameApiService {
   private MAX_LENGTH = 4;
@@ -19,21 +18,21 @@ export class NameApiService {
   }
 }
 
-export class NameApiServiceDependName {
-  private MAX_LENGTH = 4;
-  public constructor() {}
+// export class NameApiServiceDependName {
+//   private MAX_LENGTH = 4;
+//   public constructor() {}
 
-  public async getFirstName(dependName: string): Promise<string> {
-    const data = dependName;
-    const firstName = data;
+//   public async getFirstName(dependName: string): Promise<string> {
+//     const data = dependName;
+//     const firstName = data;
 
-    try {
-      if (firstName.length > this.MAX_LENGTH) {
-        throw new Error("firstName is too long!");
-      }
-      return firstName;
-    } catch (e) {
-      return ('error'); 
-    }
-  }
-}
+//     try {
+//       if (firstName.length > this.MAX_LENGTH) {
+//         throw new Error("firstName is too long!");
+//       }
+//       return firstName;
+//     } catch (e) {
+//       return ('error'); 
+//     }
+//   }
+// }
