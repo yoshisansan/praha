@@ -14,4 +14,3 @@ export const multiply = (numbers: number[]) : number | null => {
 export const minus = (numberA: number, numberB: number) : number => {
   return numberA - numberB;
 }
-

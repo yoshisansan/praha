@@ -20,11 +20,6 @@ type BoardConstructorT = {
   onClick: (i: number) => void
 }
 
-type BoardConstructorState = {
-  history: { squares: string[] | null[]}[],
-  xIsNext: boolean,
-}
-
 class Board extends React.Component<BoardConstructorT> {
   renderSquare(i: number) {
     return (
