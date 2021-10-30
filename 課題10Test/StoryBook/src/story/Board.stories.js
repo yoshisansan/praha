@@ -28,15 +28,45 @@ Default.args = {
 
 export const Maru = Template.bind({});
 Maru.args = {
-    squares: Array(9).fill('○'),
+  squares: [
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+    SquareStories.Maru.args.value,
+  ]
 };
 
 export const Batsu = Template.bind({});
 Batsu.args = {
-    squares: Array(9).fill('×'),
+  squares: [
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+    SquareStories.Batsu.args.value,
+  ]
 };
 
 export const Sankaku = Template.bind({});
 Sankaku.args = {
-    squares: Array(9).fill('△'),
+  squares: [
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+    SquareStories.Sankaku.args.value,
+  ]
 };
