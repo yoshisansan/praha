@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node app.js -d",
     "prepare": "husky install",
-    "lint": "eslint --fix *.js"
+    "lint": "eslint --fix *.js",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "Express": "^3.0.1",
