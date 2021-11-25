@@ -404,6 +404,194 @@ exports[`Storyshots Game Default 1`] = `
   <div
     className="game-info"
   >
+    <div />
+    <ol>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to game start
+        </button>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Game Draw 1`] = `
+<div
+  className="game"
+>
+  <div
+    className="game-board"
+  >
+    <div>
+      <div
+        className="board-row"
+      >
+        <button
+          className="square"
+          id="square0"
+          onClick={[Function]}
+        >
+          X
+        </button>
+        <button
+          className="square"
+          id="square1"
+          onClick={[Function]}
+        >
+          X
+        </button>
+        <button
+          className="square"
+          id="square2"
+          onClick={[Function]}
+        >
+          ○
+        </button>
+      </div>
+      <div
+        className="board-row"
+      >
+        <button
+          className="square"
+          id="square3"
+          onClick={[Function]}
+        >
+          ○
+        </button>
+        <button
+          className="square"
+          id="square4"
+          onClick={[Function]}
+        >
+          X
+        </button>
+        <button
+          className="square"
+          id="square5"
+          onClick={[Function]}
+        >
+          X
+        </button>
+      </div>
+      <div
+        className="board-row"
+      >
+        <button
+          className="square"
+          id="square6"
+          onClick={[Function]}
+        >
+          X
+        </button>
+        <button
+          className="square"
+          id="square7"
+          onClick={[Function]}
+        >
+          ○
+        </button>
+        <button
+          className="square"
+          id="square8"
+          onClick={[Function]}
+        >
+          ○
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="game-info"
+  >
+    <div>
+      Draw!
+    </div>
+    <ol>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to game start
+        </button>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Index Default 1`] = `
+<div
+  className="game"
+>
+  <div
+    className="game-board"
+  >
+    <div>
+      <div
+        className="board-row"
+      >
+        <button
+          className="square"
+          id="square0"
+          onClick={[Function]}
+        />
+        <button
+          className="square"
+          id="square1"
+          onClick={[Function]}
+        />
+        <button
+          className="square"
+          id="square2"
+          onClick={[Function]}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <button
+          className="square"
+          id="square3"
+          onClick={[Function]}
+        />
+        <button
+          className="square"
+          id="square4"
+          onClick={[Function]}
+        />
+        <button
+          className="square"
+          id="square5"
+          onClick={[Function]}
+        />
+      </div>
+      <div
+        className="board-row"
+      >
+        <button
+          className="square"
+          id="square6"
+          onClick={[Function]}
+        />
+        <button
+          className="square"
+          id="square7"
+          onClick={[Function]}
+        />
+        <button
+          className="square"
+          id="square8"
+          onClick={[Function]}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="game-info"
+  >
     <div>
       次のプレイヤーは: X
     </div>

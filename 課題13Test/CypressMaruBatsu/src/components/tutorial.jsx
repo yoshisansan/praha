@@ -35,7 +35,7 @@ export const Board = ({ squares, onClick }) => {
   );
 };
 
-class Game extends React.Component {
+export class Game extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -50,22 +50,13 @@ class Game extends React.Component {
       );
     });
 
-    let status;
-    if (this.props.winner) {
-      status = 'Winner: ' + this.props.winner;
-    } else if (this.props.stepNumber > 8) {
-      status = 'Draw!';
-    } else {
-      status = '次のプレイヤーは: ' + (this.props.xIsNext ? 'X' : 'O');
-    }
-
     return (
       <div className="game">
         <div className="game-board">
           <Board squares={this.props.current.squares} onClick={(i) => this.props.handleClick(i)} />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <div>{this.props.status}</div>
           <ol>{moves}</ol>
         </div>
       </div>
@@ -88,7 +79,6 @@ class Index extends React.Component {
   }
 
   handleClick(i) {
-    console.log(i, this.state);
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[this.state.stepNumber];
     const squares = current.squares.slice();
@@ -120,15 +110,21 @@ class Index extends React.Component {
     const current = history[history.length - 1];
     const winner = calculateWinner(current.squares);
 
+    let status;
+    if (winner) {
+      status = 'Winner: ' + this.state.winner;
+    } else if (this.state.stepNumber > 8) {
+      status = 'Draw!';
+    } else {
+      status = '次のプレイヤーは: ' + (this.state.xIsNext ? 'X' : 'O');
+    }
     return (
       <>
         <Game
-          stepNumber={this.state.stepNumber}
           handleClick={this.handleClick.bind(this)}
           history={history}
           current={current}
-          squares={this.squares}
-          winner={winner}
+          status={status}
           jumpTo={this.jumpTo.bind(this)}
         />
       </>
