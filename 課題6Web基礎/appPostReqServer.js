@@ -23,7 +23,7 @@ module.exports = (port) => {
     preflightContinue: true,
   };
   const corsNotAllowPreflight = {
-    origin: 'https://developer.mozilla.org/ja/',
+    origin: 'https://7de2-125-25-93-7.ngrok.io',
     'Access-Control-Max-Age': 200,
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'X-Requested-With, Origin, Content-Type, Accept',
@@ -90,7 +90,9 @@ module.exports = (port) => {
       // console.log(`appViewServer app listening at http://localhost:${port}`);
       console.log(``);
       console.log(`appPostReqServer: ${url}`);
-      console.log(`↑src/script/notSimpleReq.js もしくは src/script/simpleReq.js の publickURL へコピペしてください`);
+      console.log(
+        `↑src/script/notSimpleReq.js もしくは src/script/simpleReq.js の publickURL へコピペしてください`
+      );
     });
   });
 };
